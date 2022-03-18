@@ -8,7 +8,8 @@ tag: 🍞
 
 目前移动端上主流的视频直播方案有 HLS 和 RTMP，移动 WEB 端目前就只有 HLS 能用，我们重点介绍它。
 
-<big>HTTP Live Streaming<big>
+HTTP Live Streaming
+--------------
 
 HTTP Live Streaming（简称 HLS）是一个基于 HTTP 的视频流协议，由 Apple 公司实现，Mac OS 上的 QuickTime、Safari 以及 iOS 上的 Safari 都能很好的支持 HLS，高版本 Android 也增加了对 HLS 的支持。一些常见的客户端如：MPlayerX、VLC 也都支持 HLS 协议。
 
