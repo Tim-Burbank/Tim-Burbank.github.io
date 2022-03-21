@@ -37,6 +37,11 @@ HLS 协议基于 HTTP，非常简单。一个提供 HLS 的服务器需要做两
 * 分片传输码率自适应技术，播放器根据网络状况选择不同的版本让播放更平稳而不用额外缓冲  
 * 高延迟，根据分片大小通常10-30秒左右  
 
+
+Real Time Messaging Protocol
+-------
+Real Time Messaging Protocol（简称 RTMP）是 Macromedia 开发的一套视频直播协议，现在属于 Adobe。这套方案需要搭建专门的 RTMP 流媒体服务如 Adobe Media Server，并且在浏览器中只能使用 Flash 实现播放器。基于TCP，低延迟，把数据流分片，分片大小根据客户端与服务器协商的大小进行传输，保证稳定。
+
   
 
   
