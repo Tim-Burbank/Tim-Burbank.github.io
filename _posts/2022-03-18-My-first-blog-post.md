@@ -42,6 +42,18 @@ Real Time Messaging Protocol
 -------
 Real Time Messaging Protocol（简称 RTMP）是 Macromedia 开发的一套视频直播协议，现在属于 Adobe。这套方案需要搭建专门的 RTMP 流媒体服务如 Adobe Media Server，并且在浏览器中只能使用 Flash 实现播放器。基于TCP，低延迟，把数据流分片，分片大小根据客户端与服务器协商的大小进行传输，保证稳定。
 
+
+HTTP-FLV
+-------
+音视频封装成FLV的格式，通过HTTP传输，方案的优点是基于HTTP长链接能够穿透防火墙，避免被拦截，首开延迟也低于RTMP，低延迟，延迟在2-5秒之间，缺点是会在本地缓存流媒体资源，保密性不够好。
+
+
+RTMP播放和HLS/HTTP-FLV 区别
+-------
+
+![image](https://user-images.githubusercontent.com/16463294/159442279-c8e5beff-f1e3-48e4-9eb7-73a6f839e8d3.jpeg)
+
+
   
 
   
