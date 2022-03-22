@@ -4,7 +4,7 @@ title: 移动端视频直播（一）
 tag: 🍞
 ---
 
-![image](https://user-images.githubusercontent.com/16463294/158949781-570e462d-4ee6-47bb-95dc-c8a249c4cc97.png =300)
+![image](https://user-images.githubusercontent.com/16463294/158949781-570e462d-4ee6-47bb-95dc-c8a249c4cc97.png =300x100)
 
 目前移动端上主流的视频直播方案有 HLS 和 RTMP，移动 WEB 端目前就只有 HLS 能用，我们重点介绍它。
 
