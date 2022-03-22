@@ -4,11 +4,11 @@ title: 移动端视频直播（一）
 tag: 🍞
 ---
 
-![image](https://user-images.githubusercontent.com/16463294/158949781-570e462d-4ee6-47bb-95dc-c8a249c4cc97.png)
+![image](https://user-images.githubusercontent.com/16463294/158949781-570e462d-4ee6-47bb-95dc-c8a249c4cc97.png =300)
 
 目前移动端上主流的视频直播方案有 HLS 和 RTMP，移动 WEB 端目前就只有 HLS 能用，我们重点介绍它。
 
-HTTP Live Streaming
+HTTP Live Streaming  
 --------------
 
 HTTP Live Streaming（简称 HLS）是一个基于 HTTP 的视频流协议，由 Apple 公司实现，Mac OS 上的 QuickTime、Safari 以及 iOS 上的 Safari 都能很好的支持 HLS，高版本 Android 也增加了对 HLS 的支持。一些常见的客户端如：MPlayerX、VLC 也都支持 HLS 协议。
@@ -38,17 +38,17 @@ HLS 协议基于 HTTP，非常简单。一个提供 HLS 的服务器需要做两
 * 高延迟，根据分片大小通常10-30秒左右  
 
 
-Real Time Messaging Protocol
+Real Time Messaging Protocol  
 -------
 Real Time Messaging Protocol（简称 RTMP）是 Macromedia 开发的一套视频直播协议，现在属于 Adobe。这套方案需要搭建专门的 RTMP 流媒体服务如 Adobe Media Server，并且在浏览器中只能使用 Flash 实现播放器。基于TCP，低延迟，把数据流分片，分片大小根据客户端与服务器协商的大小进行传输，保证稳定。
 
 
-HTTP-FLV
+HTTP-FLV  
 -------
 音视频封装成FLV的格式，通过HTTP传输，方案的优点是基于HTTP长链接能够穿透防火墙，避免被拦截，首开延迟也低于RTMP，低延迟，延迟在2-5秒之间，缺点是会在本地缓存流媒体资源，保密性不够好。
 
 
-RTMP播放和HLS/HTTP-FLV 区别
+RTMP播放和HLS/HTTP-FLV 区别  
 -------
 
 ![image](https://user-images.githubusercontent.com/16463294/159442279-c8e5beff-f1e3-48e4-9eb7-73a6f839e8d3.jpeg)
