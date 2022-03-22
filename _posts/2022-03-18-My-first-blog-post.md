@@ -45,13 +45,17 @@ Real Time Messaging Protocol（简称 RTMP）是 Macromedia 开发的一套视�
 
 HTTP-FLV  
 -------
-音视频封装成FLV的格式，通过HTTP传输，方案的优点是基于HTTP长链接能够穿透防火墙，避免被拦截，首开延迟也低于RTMP，低延迟，延迟在2-5秒之间，缺点是会在本地缓存流媒体资源，保密性不够好。
+音视频封装成FLV的格式，通过HTTP传输，方案的优点是基于HTTP长链接能够穿透防火墙，避免被拦截，首开延迟也低于RTMP，低延迟，延迟在2-5秒之间，支持302重定向，缺点是会在本地缓存流媒体资源，保密性不够好。
+HTTP-FLV 原理是服务端在响应客户端请求的时候不返回content-length字段，这样客户端会认为还有数据没传完，一直接受新数据，直到服务器和客户端断开
 
 
-RTMP播放和HLS/HTTP-FLV 区别  
+RTMP/HTTP-FLV和HLS比较
 -------
 
 ![image](https://user-images.githubusercontent.com/16463294/159442279-c8e5beff-f1e3-48e4-9eb7-73a6f839e8d3.jpeg)
+
+RTMP/HTTP-FLV
+
 
 
   
