@@ -50,12 +50,37 @@ HTTP-FLV 原理是服务端在响应客户端请求的时候不返回content-len
 
 
 RTMP/HTTP-FLV和HLS比较
--------
+-------  
+
 
 ![image](https://user-images.githubusercontent.com/16463294/159442279-c8e5beff-f1e3-48e4-9eb7-73a6f839e8d3.jpeg)
 
 RTMP/HTTP-FLV
+-----
 
+优点：  
+* 低延迟  
+* 基于长连接，RTMP 基于 TCP 长连接；HTTP-FLV 基于 HTTP 长连接  
+* 同时支持 302 跳转，使用灵活
+
+缺点：  
+* 服务器资源消耗高，因为要保持连接  
+* 播放器必须要支持FLV，H5不能直接播放  
+* 码率自适应能做的有限  
+* HTTP-FLV会缓存数据在本地，保密性不够好
+
+
+HLS/DASH
+-----  
+
+优点：  
+* 高可扩展性  
+* 码率自适应  
+* CDN友好，降低流量成本  
+* 苹果生态，H5支持，兼容性较好
+
+缺点：  
+* 高延迟
 
 
   
